@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/html2canvas.js"></script>
+    <script type="text/javascript" src="js/canvas2image.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Indie+Flower|Open+Sans">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <main class = "container border border-secondary rounded">
+
+        <h1>Pixel Art Maker</h1>
+
+        <h2 class = "text-right"> Made By StarHan <a href="https://github.com/StarHyx" class="badge badge-dark">Github</a></h2>
+
+        <hr>
+
+        <section class="clearfix"></section>
+
+        <h2>Choose Grid Size </h2>
+
+
+        <form id="sizePicker" class = "row">
+
+            <section class = "col-md-4">
+                <p>
+                    Grid Height:&emsp;
+                    <input type="number" id="inputHeight" name="height" min="1" max="100" value="1">
+                </p>
+            </section>
+
+            <section class = "col-md-4">
+                <p>
+                    Grid Width:&emsp;
+                    <input type="number" id="inputWeight" name="width" min="1" max="100" value="1">
+                </p>
+            </section>
+
+            <section class = "col-md-4">
+                <button type="button" class ="btn btn-outline-danger" id="submission" >Create Canvas</button>
+            </section>
+
+        </form>
+
+        <article class = "col-md-12">
+            <h2>Pick A Color</h2>
+        </article>
+
+        <section class = "col-md-12">
+            <input type="color" id="colorPicker">
+        </section>
+
+        <hr>
+
+        <article class = "col-md-12">
+            <h2>Design Canvas</h2>
+        </article>
+
+        <section class="clearfix"></section>
+
+        <button type="button" class ="btn btn-outline-dark" id="download">Download</button>
+
+        <section class="clearfix"></section>
+
+        <table id="pixelCanvas"></table>
+
+        <section class="clearfix"></section>
+
+        <script src="js/designs.js"></script>
+    </main>
+</body>
+</html>
